@@ -1,0 +1,48 @@
+<resources>
+    <string name="one">Question 1</string>
+    <string name="app_name">java quiz</string>
+    <string name="question1">What is inheritance?</string>
+    <string name="oneA">It is the process where one class acquires the data and methods of another</string>
+    <string name="oneB">Inheritance is the ability of an object to take on many forms</string>
+    <string name="oneC">Inheritance is a technique to define different methods of same type</string>
+    <string name="oneD">It is the mechanism of basing an object or class upon  another object or class retaining the same implementation</string>
+    <string name="question2">What is the size of an int variable?</string>
+    <string name="twoA">8 bit</string>
+    <string name="twoB">16 bit</string>
+    <string name="twoC">32 bit</string>
+    <string name="twoD">64 bit</string>
+    <string name="question3">What is the output of this code?\nint x = 3;\nwhile(x > 0){\n\tSystem.out.print(x);\n\tx--;\n}</string>
+    <string name="threeA">321</string>
+    <string name="threeB">123</string>
+    <string name="threeC">456</string>
+    <string name="threeD">ABC</string>
+    <string name="question4">What is the output of this code?\nint x = 3;\ndo{\nx++;\nSystem.out.println(x);\n}while(false);</string>
+    <string name="fourA">5</string>
+    <string name="fourB">3</string>
+    <string name="fourC">4</string>
+    <string name="fourD">0</string>
+    <string name="question5">Constructors are used to?</string>
+    <string name="fiveA">To build a user interface.</string>
+    <string name="fiveB">Free memory.</string>
+    <string name="fiveC">Initialize a newly created object</string>
+    <string name="fiveD">To create a sub class</string>
+    <string name="welcome">Welcome</string>
+    <string name="whatWeDo">This is an app that provides programming quizzes</string>
+    <string name="enterName">Enter name</string>
+    <string name="forgot">Forgot password?</string>
+    <string name="click">Click here</string>
+    <string name="dont">Don\'t have an account? </string>
+    <string name="register">Register</string>
+    <string name="surname">Enter username</string>
+    <string name="submit">SUBMIT</string>
+    <string name="male">male</string>
+    <string name="female">female</string>
+    <string name="two">Question 2</string>
+    <string name="three">Question 3</string>
+    <string name="four">Question 4</string>
+    <string name="five">Question 5</string>
+    <string name="yourScore">Your Score</string>
+    <string name="type_answer_here">Type answer here</string>
+    <string name="john">John Doe</string>
+    <string name="retake_the_quiz">Retake the quiz</string>
+</resources>
