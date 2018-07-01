@@ -31,34 +31,35 @@
             android:orientation="vertical"
             android:padding="8dp"
             android:textColor="#000">
+
             <ImageView
                 android:id="@+id/pic"
                 android:layout_width="70dp"
                 android:layout_height="70dp"
-                android:src="@drawable/java"
+                android:layout_centerHorizontal="true"
                 android:layout_marginHorizontal="8dp"
                 android:layout_marginVertical="4dp"
-                android:layout_centerHorizontal="true"
-                />
+                android:src="@drawable/java" />
+
             <TextView
                 android:id="@+id/username"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                tools:text="@string/john"
-                android:textSize="24sp"
-                android:textColor="#000"
-                android:textStyle="bold"
                 android:layout_below="@id/pic"
-                android:layout_centerHorizontal="true"/>
+                android:layout_centerHorizontal="true"
+                android:textColor="#000"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                tools:text="@string/john" />
 
             <Button
                 android:id="@+id/start_button"
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/begin"
-                android:layout_marginBottom="16dp"
                 android:layout_alignParentBottom="true"
+                android:layout_below="@id/begin"
                 android:layout_centerHorizontal="true"
+                android:layout_marginBottom="16dp"
                 android:background="@drawable/login_button"
                 android:fontFamily="monospace"
                 android:onClick="restart"

@@ -27,9 +27,9 @@ public class QuestionOne extends AppCompatActivity {
             TextView user = findViewById(R.id.username);
             sex = extras.getChar("sex");
             ImageView pic = findViewById(R.id.pic);
-            if(sex=='M')
+            if (sex == 'M')
                 pic.setImageResource(R.drawable.male);
-            if(sex=='F')
+            if (sex == 'F')
                 pic.setImageResource(R.drawable.female);
             score = extras.getInt("score");
             user.setText("Name: " + name);
@@ -53,7 +53,7 @@ public class QuestionOne extends AppCompatActivity {
         }
         intent.putExtra("username", name);
         intent.putExtra("score", score);
-        intent.putExtra("sex",sex);
+        intent.putExtra("sex", sex);
         startActivity(intent);
     }
 
@@ -63,21 +63,26 @@ public class QuestionOne extends AppCompatActivity {
      * @param v
      */
     public void previous(View v) {
-        Toast toast = Toast.makeText(getApplicationContext(), "button has not been implemented", Toast.LENGTH_SHORT);
+        Toast toast = Toast.makeText(getApplicationContext(), R.string.notImplemented, Toast.LENGTH_SHORT);
         toast.show();
     }
-    /** This method ends the quiz
+
+    /**
+     * This method ends the quiz
      *
      * @param v
      */
     public void endApp(View v) {
-        Intent intent = new Intent(this,MainActivity.class);
+        Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
     }
+
+    /**
+     * override the onBackPressed method
+     */
     @Override
-        public void onBackPressed() {
-            Intent intent = new Intent(this,MainActivity.class);
-            startActivity(intent);
-            finish();
-        }
+    public void onBackPressed() {
+        Toast toast = Toast.makeText(getApplicationContext(), R.string.notImplemented, Toast.LENGTH_SHORT);
+        toast.show();
+    }
 }

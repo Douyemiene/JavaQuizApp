@@ -9,8 +9,6 @@ import android.widget.RadioButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.android.javaquizapp.R;
-
 public class QuestionTwo extends AppCompatActivity {
     public String name;
     public int score;
@@ -61,7 +59,7 @@ public class QuestionTwo extends AppCompatActivity {
      * @param v
      */
     public void previous(View v) {
-        Toast toast = Toast.makeText(getApplicationContext(), "button has not been implemented", Toast.LENGTH_SHORT);
+        Toast toast = Toast.makeText(getApplicationContext(), R.string.notImplemented, Toast.LENGTH_SHORT);
         toast.show();
     }
     /** This method ends the quiz
@@ -71,5 +69,14 @@ public class QuestionTwo extends AppCompatActivity {
     public void endApp(View v) {
         Intent intent = new Intent(this,MainActivity.class);
         startActivity(intent);
+    }
+
+    /**
+     * override the onBackPressed method
+     */
+    @Override
+    public void onBackPressed() {
+        Toast toast = Toast.makeText(getApplicationContext(), R.string.notImplemented, Toast.LENGTH_SHORT);
+        toast.show();
     }
 }

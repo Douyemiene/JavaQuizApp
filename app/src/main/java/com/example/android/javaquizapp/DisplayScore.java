@@ -9,9 +9,6 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.android.javaquizapp.MainActivity;
-import com.example.android.javaquizapp.R;
-
 public class DisplayScore extends AppCompatActivity {
     public String name;
     public int score;
@@ -29,9 +26,9 @@ public class DisplayScore extends AppCompatActivity {
             score = extras.getInt("score");
             sex = extras.getChar("sex");
             ImageView pic = findViewById(R.id.pic);
-            if(sex=='M')
+            if (sex == 'M')
                 pic.setImageResource(R.drawable.male);
-            if(sex=='F')
+            if (sex == 'F')
                 pic.setImageResource(R.drawable.female);
             TextView user = findViewById(R.id.username);
             user.setText(name);
@@ -45,10 +42,18 @@ public class DisplayScore extends AppCompatActivity {
     public void restart(View v) {
         Intent intent = new Intent(this, MainActivity.class);
         intent.putExtra("username", name);
-        intent.putExtra("sex",sex);
+        intent.putExtra("sex", sex);
         startActivity(intent);
     }
 
+    /**
+     * override the onBackPressed method
+     */
+    @Override
+    public void onBackPressed() {
+        Toast toast = Toast.makeText(getApplicationContext(), R.string.notImplemented, Toast.LENGTH_SHORT);
+        toast.show();
+    }
 
 
 }

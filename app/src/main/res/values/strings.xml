@@ -45,4 +45,5 @@
     <string name="type_answer_here">Type answer here</string>
     <string name="john">John Doe</string>
     <string name="retake_the_quiz">Retake the quiz</string>
+    <string name="notImplemented">button has not been implemented</string>
 </resources>

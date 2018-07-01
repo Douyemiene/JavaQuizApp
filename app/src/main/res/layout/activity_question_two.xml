@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorPrimaryDark">
+
     <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
         android:id="@+id/display"
@@ -11,13 +12,15 @@
         android:layout_height="match_parent"
         android:background="@color/colorPrimaryDark"
         tools:context=".DisplayScore">
+
         <ImageView
             android:id="@+id/im"
             android:layout_width="match_parent"
             android:layout_height="200dp"
             android:layout_alignParentTop="true"
             android:scaleType="centerCrop"
-            android:src="@drawable/code"/>
+            android:src="@drawable/code" />
+
         <LinearLayout
             android:id="@+id/linear"
             android:layout_width="match_parent"
@@ -28,35 +31,35 @@
             android:orientation="vertical"
             android:paddingBottom="8dp"
             android:paddingHorizontal="8dp"
-            android:textColor="#000"
-            >
+            android:textColor="#000">
+
             <LinearLayout
                 android:id="@+id/user"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@android:drawable/dialog_holo_light_frame"
                 android:layout_marginBottom="16dp"
-                >
+                android:background="@android:drawable/dialog_holo_light_frame">
+
                 <ImageView
                     android:id="@+id/pic"
                     android:layout_width="50dp"
                     android:layout_height="50dp"
-                    android:src="@drawable/java"
                     android:layout_marginHorizontal="8dp"
                     android:layout_marginVertical="4dp"
-                    />
+                    android:src="@drawable/java" />
+
                 <TextView
                     android:id="@+id/username"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textStyle="bold"
-                    android:textAllCaps="true"
-                    tools:text="Name: John Doe"
-                    android:textColor="#000"
                     android:layout_marginHorizontal="8dp"
                     android:layout_marginVertical="4dp"
-                    />
+                    android:textAllCaps="true"
+                    android:textColor="#000"
+                    android:textStyle="bold"
+                    tools:text="Name: John Doe" />
             </LinearLayout>
+
             <TextView
                 android:id="@+id/question"
                 android:layout_width="match_parent"
@@ -66,44 +69,47 @@
                 android:text="@string/question2"
                 android:textColor="#000000"
                 android:textSize="16sp"
-                android:textStyle="bold"/>
+                android:textStyle="bold" />
+
             <View
                 android:layout_width="match_parent"
                 android:layout_height="2dp"
                 android:layout_marginTop="4dp"
-                android:background="@color/colorPrimary"
-                />
+                android:background="@color/colorPrimary" />
+
             <RadioGroup
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
+
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/twoA"/>
+                    android:text="@string/twoA" />
 
                 <RadioButton
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/twoB"
-                    />
+                    android:text="@string/twoB" />
+
                 <RadioButton
                     android:id="@+id/ans"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/twoC"/>
+                    android:text="@string/twoC" />
+
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/twoD"/>
+                    android:text="@string/twoD" />
             </RadioGroup>
+
             <View
                 android:layout_width="match_parent"
                 android:layout_height="2dp"
                 android:layout_marginTop="4dp"
                 android:background="@color/colorPrimary"
-                android:padding="4dp"
-                />
+                android:padding="4dp" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -122,7 +128,7 @@
                     android:background="@drawable/button_border"
                     android:onClick="previous"
                     android:text="previous"
-                    android:textColor="#FFF"/>
+                    android:textColor="#FFF" />
 
                 <Button
                     android:layout_width="wrap_content"
@@ -131,9 +137,10 @@
                     android:background="@drawable/button_border"
                     android:onClick="next"
                     android:text="next"
-                    android:textColor="#FFF"/>
+                    android:textColor="#FFF" />
             </RelativeLayout>
         </LinearLayout>
+
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -141,6 +148,6 @@
             android:layout_marginHorizontal="8dp"
             android:background="@android:drawable/dialog_holo_dark_frame"
             android:text="end quiz"
-            android:textColor="#FFFFFF"/>
+            android:textColor="#FFFFFF" />
     </RelativeLayout>
 </ScrollView>
