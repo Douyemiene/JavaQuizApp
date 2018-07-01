@@ -54,6 +54,15 @@ public class QuestionFour extends AppCompatActivity {
      * @param v
      */
     public void previous(View v){
-        onBackPressed();
+        Toast toast = Toast.makeText(getApplicationContext(), "button has not been implemented", Toast.LENGTH_SHORT);
+        toast.show();
+    }
+    /** This method ends the quiz
+     *
+     * @param v
+     */
+    public void endApp(View v) {
+        Intent intent = new Intent(this,MainActivity.class);
+        startActivity(intent);
     }
 }

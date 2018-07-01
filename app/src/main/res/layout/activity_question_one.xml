@@ -139,6 +139,7 @@
             android:background="@android:drawable/dialog_holo_dark_frame"
             android:text="end quiz"
             android:textColor="#FFFFFF"
-            android:layout_below="@id/linear"/>
+            android:layout_below="@id/linear"
+            android:onClick="endApp"/>
     </RelativeLayout>
 </ScrollView>

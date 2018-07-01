@@ -37,7 +37,7 @@ public class DisplayScore extends AppCompatActivity {
             user.setText(name);
         }
         String msg = "Name: " + name + "\nscore: " + score;
-        Toast toast = Toast.makeText(getApplicationContext(), msg, Toast.LENGTH_SHORT);
+        Toast toast = Toast.makeText(getApplicationContext(), msg, Toast.LENGTH_LONG);
         toast.setGravity(Gravity.CENTER, 0, 0);
         toast.show();
     }
